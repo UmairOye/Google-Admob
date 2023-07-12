@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "196483348977",
+    "project_id": "dummy-1873e",
+    "storage_bucket": "dummy-1873e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:196483348977:android:161a1117afbd14e6f0ec50",
+        "android_client_info": {
+          "package_name": "com.example.admoballadsimplementation"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD8tooKbip5afJtKqAanJ58NMu_g6jEoT8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

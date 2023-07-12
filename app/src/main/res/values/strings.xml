@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">AdMob Ads</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+<!--    Admob Ad IDs-->
+
+    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="reward_ad">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="ad_native">ca-app-pub-3940256099942544/2247696110</string>
+    <string name="banner_is_implemented_below_you_can_check_it_out">Banner is implemented below, you can check it out</string>
+    <string name="small_native_ad">Small Native Ad</string>
+    <string name="this_is_your_native_ad_i_hope_you_like_it">This is your native ad, i hope you like it?</string>
+    <string name="close">Close</string>
+    <string name="reward_ads_is_not_ready_yet">Reward ads is not ready yet</string>
+    <string name="the_interstitial_ad_wasn_t_ready_yet">The interstitial ad wasn\'t ready yet.</string>
+    <string name="ad_showed_fullscreen_content">Ad showed fullscreen content.</string>
+    <string name="ad_recorded_an_impression">Ad recorded an impression.</string>
+    <string name="ad_was_clicked">Ad was clicked.</string>
+    <string name="ad_dismissed_fullscreen_content">Ad dismissed fullscreen content.</string>
+    <string name="ad_failed_to_show_fullscreen_content">Ad failed to show fullscreen content.</string>
+    <string name="admob_ads_are_not_loaded_yet">Admob ads are not loaded yet!</string>
+    <string name="large_native_ads">Large native Ads</string>
+
+</resources>
