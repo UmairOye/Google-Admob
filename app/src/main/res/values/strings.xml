@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">AdMobAllAdsImplementation</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+<!--    Admob Ad IDs-->
+
+    <string name="banner_ad">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_id">ca-app-pub-3940256099942544~3347511713</string>
+    <string name="reward_ad">ca-app-pub-3940256099942544/5224354917</string>
+    <string name="interstitial_ad">ca-app-pub-3940256099942544/1033173712</string>
+    <string name="ad_attribution">Ad</string>
+    <string name="ad_native">ca-app-pub-3940256099942544/2247696110</string>
+
+</resources>
