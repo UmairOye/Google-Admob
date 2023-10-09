@@ -12,9 +12,9 @@ interface AllAdsInterface {
     fun getAdSize(activity: Activity): AdSize?
     fun loadBanner(activity: Activity , adView: AdView)
     fun loadRewardedAds(context: Activity)
-    fun showRewardAds(activity: Activity)
+    fun showRewardAds(activity: Activity, function: () -> Unit)
     fun loadInterstitialAd(context: Activity)
-    fun showInterstitialAd(context: Activity)
+    fun showInterstitialAd(context: Activity, function: () -> Unit)
     fun populateNativeAdView(nativeAd: NativeAd , adView: NativeAdView)
     fun showSmallNativeAd(activity: Activity? , frameLayout: FrameLayout)
     fun showLargeNativeAd(activity: Activity? , frameLayout: FrameLayout)

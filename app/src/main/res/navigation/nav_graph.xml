@@ -9,5 +9,14 @@
         android:id="@+id/home2"
         android:name="com.example.admoballadsimplementation.ui.fragments.Home"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" />
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_nextFragments"
+            app:destination="@id/nextFragments" />
+    </fragment>
+    <fragment
+        android:id="@+id/nextFragments"
+        android:name="com.example.admoballadsimplementation.ui.fragments.NextFragment"
+        android:label="fragment_next_fragments"
+        tools:layout="@layout/fragment_next_fragments" />
 </navigation>

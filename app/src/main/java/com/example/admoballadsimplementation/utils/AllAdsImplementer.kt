@@ -111,7 +111,7 @@ class AllAdsImplementer: AllAdsInterface {
             })
     }
 
-    override fun showRewardAds(activity: Activity) {
+    override fun showRewardAds(activity: Activity, function: () -> Unit) {
         if (mRewardedAd != null) {
             mRewardedAd!!.show(
                 activity
@@ -135,6 +135,7 @@ class AllAdsImplementer: AllAdsInterface {
                         rewardedAd.fullScreenContentCallback = object : FullScreenContentCallback() {
                             override fun onAdDismissedFullScreenContent() {
                                 super.onAdDismissedFullScreenContent()
+                                function.invoke()
                                 loadRewardedAds(activity)
                             }
                         }
@@ -162,7 +163,7 @@ class AllAdsImplementer: AllAdsInterface {
     }
 
 
-    override fun showInterstitialAd(context: Activity) {
+    override fun showInterstitialAd(context: Activity, function: () -> Unit) {
         if (mInterstitialAd != null) {
             mInterstitialAd!!.show(context)
             mInterstitialAd!!.fullScreenContentCallback = object : FullScreenContentCallback() {
@@ -172,6 +173,7 @@ class AllAdsImplementer: AllAdsInterface {
 
                 override fun onAdDismissedFullScreenContent() {
                     Log.d(TAG , context.getString(R.string.ad_dismissed_fullscreen_content))
+                    function.invoke()
                     loadInterstitialAd(context)
                 }
 

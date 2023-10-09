@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
-import androidx.lifecycle.ViewModelProvider
+import androidx.navigation.fragment.findNavController
 import com.example.admoballadsimplementation.R
 import com.example.admoballadsimplementation.adapters.AdsAdapter
 import com.example.admoballadsimplementation.data.AdsViewModel
@@ -42,6 +42,7 @@ class Home : Fragment(), AllAdsInterface by AllAdsImplementer() {
         }
 
         adView = AdView(requireContext())
+
         setBannerAds(binding.include.adViewContainer, adView!!, requireActivity())
         loadRewardedAds(requireActivity())
         loadInterstitialAd(requireActivity())
@@ -52,7 +53,7 @@ class Home : Fragment(), AllAdsInterface by AllAdsImplementer() {
                     when (position) {
                         0 -> {
                             if (Constants.isAdsAvailable) {
-                                showRewardAds(requireActivity())
+                                showRewardAds(requireActivity()) { findNavController().navigate(R.id.action_home2_to_nextFragments) }
                             } else {
                                 showToast(
                                     requireActivity(),
@@ -80,7 +81,11 @@ class Home : Fragment(), AllAdsInterface by AllAdsImplementer() {
 
                         4 -> {
                             if (Constants.isAdsAvailable) {
-                                showInterstitialAd(requireActivity())
+                                showInterstitialAd(requireActivity()) {
+                                    findNavController().navigate(
+                                        R.id.action_home2_to_nextFragments
+                                    )
+                                }
                             } else {
                                 showToast(
                                     requireActivity(),
